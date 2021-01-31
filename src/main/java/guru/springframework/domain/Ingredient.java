@@ -13,6 +13,9 @@ public class Ingredient {
     private String description;
     private BigDecimal amount;
 
+    @Enumerated(value = EnumType.STRING)
+    private Difficulty difficulty;
+
     @ManyToOne
     private Recipe recipe;
 
