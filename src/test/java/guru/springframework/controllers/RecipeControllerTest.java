@@ -25,7 +25,7 @@ class RecipeControllerTest {
 
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
         recipeController = new RecipeController(recipeService);
     }
 
